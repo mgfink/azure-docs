@@ -114,7 +114,7 @@ In addition to the ASE functional dependencies, there are a few extra items rela
 -   Process Explorer
 -   Console
 
-When you use an ILB ASE, the SCM site isn't internet accessible from outside the VNet. When your app is hosted on an ILB ASE, some capabilities will not work from the portal.  
+When you use an ILB ASE, the SCM site isn't internet accessible from outside the VNet directly.  To make the SCM site available from outside the VNet (eg. from the internet) you would need to have an Application Gateway configured.  When your app is hosted on an ILB ASE, some capabilities will not work from the portal.  
 
 Many of those capabilities that depend upon the SCM site are also available directly in the Kudu console. You can connect to it directly rather than by using the portal. If your app is hosted in an ILB ASE, use your publishing credentials to sign in. The URL to access the SCM site of an app hosted in an ILB ASE has the following format: 
 
